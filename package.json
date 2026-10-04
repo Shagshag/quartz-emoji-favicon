@@ -1,0 +1,32 @@
+{
+  "name": "emoji-favicon",
+  "version": "1.0.0",
+  "description": "Uses an emoji as the site favicon through an inline SVG data URI.",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "quartz": {
+    "name": "emoji-favicon",
+    "displayName": "Emoji Favicon",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 50,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "emoji": "🐢"
+    },
+    "optionSchema": {
+      "emoji": {
+        "type": "string"
+      }
+    }
+  }
+}
